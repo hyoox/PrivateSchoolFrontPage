@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Assignments per Student per Course</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="General.css">
+</head>
+
+<body>
+
+    <h1>Assignments Per Student Per Course</h1>
+    <h2>Add Assignment-Course to a Student:</h2>
+
+
+    <form name="AssignmentsPC" action="index.html" method="GET">
+        <div>
+            <label>First Name </label>
+            <input type="text" name="FirstName" placeholder="i.e Nikos" pattern="[A-ZΑ-Ω][a-zα-ωάήίόέύώϊϋΐΰ]*"
+                oninvalid="setCustomValidity('Use only Alphabets without spaces,first letter must be Uppercase!')"
+                onchange="try{setCustomValidity('')}catch(e){}" id="FirstName" required />
+        </div>
+        <div>
+            <label>Last Name </label>
+            <input type="text" name="LastName" placeholder="i.e Skliris" pattern="[A-ZΑ-Ω][a-zα-ωάήίόέύώϊϋΐΰ]*"
+                oninvalid="setCustomValidity('Use only Alphabets without spaces,first letter must be Uppercase!')"
+                onchange="try{setCustomValidity('')}catch(e){}" id="LastName" required />
+        </div>
+        <div>
+            <label>Title </label>
+            <input type="text" name="Title" placeholder="i.e Individual Project" id="Subject" required />
+        </div>
+        <div>
+            <label>Description </label>
+            <input type="text" name="Description" placeholder="i.e First Half" id="Description" required />
+        </div>
+
+        <div>
+            <label>Submission DateTime </label>
+            <input type="date" name="subDateTime" min="2010-10-13" required>
+        </div>
+        <div>
+            <label>Title </label>
+            <input type="text" name="Title" placeholder="i.e CB9" id="Subject" required />
+        </div>
+        <div>
+            <label>Stream </label>
+            <input type="text" name="Stream" placeholder="i.e C#" id="Stream" required />
+        </div>
+        <div>
+
+            Choose Stream:
+            <label>
+                <input type="radio" name="Stream" value="Full-Time" required />
+                Full-Time
+            </label>
+
+            <label>
+                <input type="radio" name="Stream" value="Part-Time" required />
+                Part-Time
+            </label>
+
+        </div>
+        <button type="submit" id="apcdb">Add to database</button>
+        <input type="button" onclick="location.href='index.html';" value="Back" />
+    </form>
+    <script src="Validations.js"></script>
+</body>
+
+</html>

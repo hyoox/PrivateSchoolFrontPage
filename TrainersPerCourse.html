@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Trainers Per Course</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="General.css" <body>
+    <h1>Trainers Per Course</h1>
+    <h2>Add a Trainer to a Course:</h2>
+    <form action="index.html" method="GET">
+        <div>
+            <label>First Name </label>
+            <input type="text" name="FirstName" placeholder="i.e Steve" pattern="[A-ZΑ-Ω][a-zα-ωάήίόέύώϊϋΐΰ]*"
+                oninvalid="setCustomValidity('Use only Alphabets without spaces,first letter must be Uppercase!')"
+                onchange="try{setCustomValidity('')}catch(e){}" id="FirstName" required />
+        </div>
+        <div>
+            <label>Last Name </label>
+            <input type="text" name="LastName" placeholder="i.e Jobs" pattern="[A-ZΑ-Ω][a-zα-ωάήίόέύώϊϋΐΰ]*"
+                oninvalid="setCustomValidity('Use only Alphabets without spaces,first letter must be Uppercase!')"
+                onchange="try{setCustomValidity('')}catch(e){}" id="LastName" required />
+        </div>
+        <div>
+            <label>Subject </label>
+            <input type="text" name="Subject" placeholder="i.e C#" id="Subject" required />
+        </div>
+        <div>
+            <label>Title </label>
+            <input type="text" name="Title" placeholder="i.e CB9" id="Title" required />
+        </div>
+        <div>
+
+            Choose Stream:
+            <label>
+                <input type="radio" name="Stream" value="Full-Time" required />
+                Full-Time
+            </label>
+
+            <label>
+                <input type="radio" name="Stream" value="Part-Time" required />
+                Part-Time
+            </label>
+
+        </div>
+
+        <button type="submit">Add to database</button>
+        <input type="button" onclick="location.href='index.html';" value="Back" />
+    </form>
+    </body>
+
+</html>

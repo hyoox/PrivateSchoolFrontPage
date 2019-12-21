@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif !important;
+    font-size: 25px;
+}
+
+body {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://images2.alphacoders.com/261/thumb-1920-26102.jpg");
+
+}
+
+body>form {
+    border-style: solid;
+    border-width: 5px;
+    border-color: wheat;
+}
+
+body>h1 {
+    font-size: 4em;
+    color: rgb(250, 249, 242);
+}
+
+body>h2 {
+    font-size: 2em;
+    color: rgb(250, 249, 242);
+}
+
+main {
+
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+body>form>div {
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+
+}
+
+body>form>button {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+body>form>button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+body>form>input {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+body>form>input:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+body>* {
+    padding: 10px;
+}

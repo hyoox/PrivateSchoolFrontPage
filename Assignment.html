@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Assignemets</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="General.css">
+
+<body>
+    <h1>Assignment</h1>
+    <h2>Add an Assignment:</h2>
+    <form name="Assignments" action="index.html" method="GET">
+        <div>
+            <label>Title </label>
+            <input type="text" name="Title" placeholder="i.e Individual Project" id="Subject" required />
+        </div>
+        <div>
+            <label>Description </label>
+            <input type="text" name="Description" placeholder="i.e First Half" id="Description" required />
+        </div>
+
+        <div>
+            <label>Submission DateTime </label>
+            <input type="date" name="subDateTime" min="2015-01-01" required>
+        </div>
+        <div>
+            <label>Oral Mark </label>
+            <input type="number" name="OralMark" placeholder="max. 50" min="0" max="50" id="OralMark" required />
+        </div>
+        <div>
+            <label>Total Mark </label>
+            <input type="number" name="TotalMark" placeholder="max. 100" min="0" max="100" id="TotalMark" required />
+        </div>
+        <button type="submit" id="asgdb">Add to database</button>
+        <input type="button" onclick="location.href='index.html';" value="Back" />
+    </form>
+    <script src="Validations.js"></script>
+</body>
+
+</html>

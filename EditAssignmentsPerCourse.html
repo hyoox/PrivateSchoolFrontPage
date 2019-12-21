@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit Assignemets Per Course</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="General.css">
+
+<body>
+    <h1>Assignments Per Course</h1>
+    <h2>Edit an Assignment to a Course:</h2>
+
+    <form action="index.html" method="GET">
+        <div>
+            <label>Title </label>
+            <input type="text" name="Title" value="Individual Project" id="Subject" />
+        </div>
+        <div>
+            <label>Description </label>
+            <input type="text" name="Description" value="First Half" id="Description" />
+        </div>
+
+        <div>
+            <label>Submission Date </label>
+            <input type="date" name="subDateTime" value="2018-02-01">
+        </div>
+        <div>
+            <label>Title </label>
+            <input type="text" name="Title" value="CB9" id="Subject" />
+        </div>
+        <div>
+            <label>Stream </label>
+            <input type="text" name="Stream" value="C#" id="Stream" />
+        </div>
+        <div>
+
+            Choose Stream:
+            <label>
+                <input type="radio" name="Stream" value="Full-Time" checked />
+                Full-Time
+            </label>
+
+            <label>
+                <input type="radio" name="Stream" value="Part-Time" />
+                Part-Time
+            </label>
+
+        </div>
+        <button type="submit">Edit</button>
+        <input type="button" onclick="location.href='index.html';" value="Back" />
+    </form>
+</body>
+
+</html>

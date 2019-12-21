@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit Students Per Course</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="General.css">
+</head>
+
+<body>
+
+    <h1>Students Per Course</h1>
+    <h2>Edit a Student to a Course:</h2>
+
+    <form action="index.html" method="GET">
+        <div>
+            <label>First Name </label>
+            <input type="text" name="FirstName" value="Nikos" id="FirstName" />
+        </div>
+        <div>
+            <label>Last Name </label>
+            <input type="text" name="LastName" value="Skliris" id="LastName" />
+        </div>
+        <div>
+            <label>Title </label>
+            <input type="text" name="Title" value="CB9" id="Subject" />
+        </div>
+        <div>
+            <label>Stream </label>
+            <input type="text" name="Stream" value="C#" id="Stream" />
+        </div>
+        <div>
+
+            Choose Stream:
+            <label>
+                <input type="radio" name="Stream" value="Full-Time" checked />
+                Full-Time
+            </label>
+
+            <label>
+                <input type="radio" name="Stream" value="Part-Time" />
+                Part-Time
+            </label>
+
+        </div>
+        <button type="submit">Edit</button>
+        <input type="button" onclick="location.href='index.html';" value="Back" />
+    </form>
+
+</body>
+
+</html>

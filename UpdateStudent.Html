@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Update Students</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="General.css">
+</head>
+
+<body>
+
+    <h1>Students</h1>
+    <h2>Update a Student:</h2>
+
+    <form action="index.html" method="GET">
+        <div>
+            <label>First Name:</label>
+            <input type="text" name="FirstName" value="Nikos" pattern="[A-ZΑ-Ω][a-zα-ω]*"
+                oninvalid="setCustomValidity('Use only Alphabets without spaces,first letter must be Uppercase!')"
+                onchange="try{setCustomValidity('')}catch(e){}" placeholder="i.e Nikos" id="FirstName" required />
+        </div>
+        <div>
+            <label>Last Name: </label>
+            <input type="text" name="LastName" value="Skliris" pattern="[A-ZΑ-Ω][a-zα-ω]*"
+                oninvalid="setCustomValidity('Use only Alphabets without spaces,first letter must be Uppercase!')"
+                onchange="try{setCustomValidity('')}catch(e){}" placeholder="i.e Skliris" id="LastName" required />
+        </div>
+        <div>
+            <label>Date Of Birth: </label>
+            <input type="date" name="DateOfBirth" value="1991-12-21" min="1980-02-15" max="2019-11-24" required />
+        </div>
+        <div>
+            <label>Tuition Fees: </label>
+            <input type="number" name="Tuition Fees" value="1400" min="0" max="5000" required>
+        </div>
+        <button type="submit">Update Student</button>
+        <input type="button" onclick="location.href='index.html';" value="Back" />
+    </form>
+</body>
+
+</html>
