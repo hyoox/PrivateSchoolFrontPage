@@ -1,2 +1,2 @@
 # PrivateSchoolFrontPage
-Using Html,Css and JavaScript.
+Single Front-End Project using Html,Css and JavaScript.
